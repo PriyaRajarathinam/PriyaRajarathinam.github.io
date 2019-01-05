@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  </head>
+  <style>
+      body{
+        background-color:white;
+      }
+      .trash{
+        float:right;
+      }
+      .diaryHeader{
+        background-color:#212528;
+        
+        
+      }
+      .diary{
+        background-color:white;
+      }
+      input {
+      outline:none;
+      }
+      input:focus {
+        outline: 0;
+      }
+      .sidenav {
+        height: 100%;
+        width: 160px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 20px;
+      }
+
+      .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        color:white;
+        display: block;
+      }
+      .leftBar{
+        
+      }
+      .left{
+   
+      }
+    
+  </style>
+  <body>
+       
+        <nav class="navbar navbar-expand-lg navbar-dark leftBar" style="background-color:#212528;">
+                <a class="navbar-brand" href="#">Happy Skin</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                  <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active">
+                          <a class="nav-link" href="homepage.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Entries.html">Entries</a>
+                    </li>
+                    
+                 </ul>
+                </div>
+                </nav>
+                
+                <div class="container" style="padding-top:5%">
+                        <div class="row">
+                          <div class="col">          
+                                <table class="table table-striped" style="border-style:solid;border-color:#212528" id="monday">
+                                    <thead class="thead-dark">
+                                    <tr>
+                                      <th>Monday</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>John<span class="fa fa-trash trash" onclick="deleteItem(this)"></span></td>
+                                    </tr>
+                                    <tr>
+                                      <td>Mary</td>
+                                    </tr>
+                                    <tr>
+                                      <td>July</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <div class="input-group mb-3" style="background-color:#212528">
+                                    <input type="text" id="input1" class="form-control" style="border-style:solid;border-color:#212528"  placeholder="Routine Item" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                    <div class="input-group-append">
+      
+                                      <span onclick="displayRow('monday')" class="btn btn-outline-secondary" style="color:white">Add</span>
+                                    </div>
+                                  </div>
+                          </div>
+                          <div class="col">
+                               
+                              <table class="table table-striped" style="border-style:solid;border-color:#212528">
+                                  <thead class="thead-dark">
+                                      <tr>
+                                          <th>Entry</th>
+                                        </tr>
+                                        <tr>
+                                          <td contenteditable="true" class="diary"style="padding-bottom:400px;"></td>
+                                        </tr>
+                                      </thead>
+                              </table>
+                             
+                          
+                        </div>  
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                        <span onclick="addEntry()"class="fa fa-plus-circle" style="float:right;padding-top:2%;font-size:30px"></span>
+                    </div>
+                   
+                  </div>
+                  </div>
+        <script src="scripts.js"></script>
+       
+           
+        
+   
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </body>
+</html>
