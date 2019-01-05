@@ -58,7 +58,7 @@
       }
     
   </style>
-  <body>
+  <body onload="updateTable()">
        
         <nav class="navbar navbar-expand-lg navbar-dark leftBar" style="background-color:#212528;">
                 <a class="navbar-brand" href="#">Happy Skin</a>
@@ -68,7 +68,7 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                   <ul class="navbar-nav mr-auto">
                       <li class="nav-item active">
-                          <a class="nav-link" href="homepage.html">Home <span class="sr-only">(current)</span></a>
+                          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
                     <li class="nav-item">
                       <a class="nav-link" href="Entries.html">Entries</a>
@@ -89,7 +89,7 @@
                                   </thead>
                                   <tbody>
                                     <tr>
-                                      <td>John<span class="fa fa-trash trash" onclick="deleteItem(this)"></span></td>
+                                      <td>John<span class="fa fa-trash trash"></span></td>
                                     </tr>
                                     <tr>
                                       <td>Mary</td>
